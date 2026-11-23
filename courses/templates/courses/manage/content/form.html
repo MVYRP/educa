@@ -1,12 +1,20 @@
 {% extends "base.html" %}
 
 {% block title %}
-  {% if object %}Edit content "{{ object.title }}"{% else %}Add new content{% endif %}
+  {% if object %}
+    Edit content "{{ object.title }}"
+  {% else %}
+    Add new content
+  {% endif %}
 {% endblock %}
 
 {% block content %}
   <h1>
-    {% if object %}Edit content "{{ object.title }}"{% else %}Add new content{% endif %}
+    {% if object %}
+      Edit content "{{ object.title }}"
+    {% else %}
+      Add new content
+    {% endif %}
   </h1>
   <div class="module">
     <h2>Course info</h2>
